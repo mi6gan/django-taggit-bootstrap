@@ -1,0 +1,20 @@
+<input type="text" class="typeahead bootstrap-tagsinput form-control" {{ final_attrs|safe }} value="{{ value }}" data-role="tagsinput" />
+<script type="text/javascript">
+	$(function(){
+	$('#{{ id }}').tagsinput('input').typeahead(
+			{                  
+				hint: false,
+				highlight: true,
+				minLength: 1
+			},
+			{
+				source: function(query,cb) {
+					$.get("{% url 'taggit-bootstrap' %}",
+					{'query':query},
+					function(data){
+						cb(data);
+					});
+			},
+	});
+	});
+</script>
