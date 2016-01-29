@@ -1,7 +1,7 @@
 from django import forms
 from django.template.loader import render_to_string
 from django.utils.safestring import mark_safe
-from django.forms.util import flatatt
+from django.forms.utils import flatatt
 from django.utils.encoding import force_text
 
 from taggit.utils import parse_tags, edit_string_for_tags
