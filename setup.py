@@ -10,5 +10,5 @@ setup(name='django-taggit-bootstrap',
       url='https://github.com/mi6gan/django-taggit-bootstrap',
       packages=['taggit_bootstrap'],
       package_data={'taggit_bootstrap':["templates/taggit_bootstrap/*.html","static/css/*.css","static/js/*.js"]},
-      requires=['django_taggit']
+      requires=['django', 'django_taggit']
      )
