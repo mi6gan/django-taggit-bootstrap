@@ -3,8 +3,8 @@
 from distutils.core import setup
 
 setup(name='django-taggit-bootstrap',
-      version='0.1',
-      description='Django Taggit widget with autosuggest support on top of Bootstrap 3',
+      version='0.2',
+      description='Django Taggit widget with autosuggestion support on top of Bootstrap 3',
       author='Michael Boyarov',
       author_email='mi666gan@gmail.com',
       url='https://github.com/mi6gan/django-taggit-bootstrap',
